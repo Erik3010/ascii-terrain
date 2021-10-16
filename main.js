@@ -18,9 +18,7 @@ const solution = (patternString) => {
     "U|U": -1,
   };
 
-  const getInc = (prev, current) => {
-    return inc[`${prev}|${current}`];
-  };
+  const getInc = (prev, current) => inc[`${prev}|${current}`];
 
   const pattern = patternString.split("");
   let result = [];
@@ -48,7 +46,6 @@ const solution = (patternString) => {
     pointer.x++;
   });
 
-  // return result;
   return result.map((row) => row.join("")).join("\n");
 };
 

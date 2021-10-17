@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "sh deploy"
+    "deploy": "sh deploy.sh"
   },
   "devDependencies": {
     "vite": "^2.6.4"

@@ -35,6 +35,14 @@ class UI {
 
       return (html += `<div class="row">${rowHtml}</div>`);
     }, "");
+
+    const firstRow = this.resultContainer.querySelector(".row");
+    if (
+      firstRow &&
+      this.resultContainer.scrollWidth > this.resultContainer.clientWidth
+    ) {
+      this.resultContainer.scrollTo(this.resultContainer.scrollWidth, 0);
+    }
   }
 }
 

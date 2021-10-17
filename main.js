@@ -7,7 +7,7 @@ import converter from "./src/converter";
 
 const ui = new UI({
   input: document.querySelector(".form-container input"),
-  resultContainer: document.querySelector(".result-container"),
+  resultContainer: document.querySelector(".result-wrapper"),
 });
 ui.init();
 

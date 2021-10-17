@@ -11,5 +11,9 @@ const ui = new UI({
 });
 ui.init();
 
-// console.log(tests[2]);
-// console.log(converter(tests[2]));
+console.log(tests[4]);
+console.log(
+  converter(tests[4])
+    .map((row) => row.join(""))
+    .join("\n")
+);

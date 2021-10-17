@@ -14,6 +14,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.result-container {
+  max-width: 350px;
+  max-height: 250px;
+  width: 350px;
+  height: 250px;
+  overflow: auto;
+}
+
+.result-container .row {
+  display: flex;
+}
+
+.result-container .col {
+  min-width: 8px;
+  max-width: 8px;
+  text-align: center;
 }
 
 .form-container {
@@ -33,5 +52,5 @@
 }
 
 .form-container input:focus {
-  border-color: #059669;
+  border-color: #ef4444;
 }

@@ -3,18 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-}
-
-#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
   color: #2c3e50;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .result-container {
@@ -64,4 +65,19 @@
 
 .form-container input:focus {
   border-color: #ef4444;
+}
+
+.footer {
+  line-height: 1.75;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.footer .footer-list {
+  list-style: none;
+}
+
+.footer .footer-list-item {
+  font-size: 0.875rem;
+  color: #7f7f7f;
 }

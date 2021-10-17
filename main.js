@@ -1,9 +1,9 @@
 import "./style.css";
 
 import tests from "./tests/index";
+import converter from "./src/converter";
 
 import UI from "./src/UI";
-import converter from "./src/converter";
 
 const ui = new UI({
   input: document.querySelector(".form-container input"),
@@ -11,9 +11,9 @@ const ui = new UI({
 });
 ui.init();
 
-console.log(tests[4]);
-console.log(
-  converter(tests[4])
-    .map((row) => row.join(""))
-    .join("\n")
-);
+// console.log(tests[4]);
+// console.log(
+//   converter(tests[4])
+//     .map((row) => row.join(""))
+//     .join("\n")
+// );
